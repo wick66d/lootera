@@ -5,14 +5,14 @@ import { HttpClient } from '@angular/common/http';
 import { Product } from './shared/models/product';
 import { Pagination } from './shared/models/pagination';
 import { ShopService } from './core/services/shop.service';
-import { ShopComponent } from "./features/shop/shop.component";
+import { ShopComponent } from './features/shop/shop.component';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, HeaderComponent, ShopComponent],
+  imports: [HeaderComponent, ShopComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
 })
 export class AppComponent {
-  title = "Skinet"
+  title = 'Skinet';
 }
