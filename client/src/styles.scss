@@ -37,6 +37,26 @@ html {
   );
 }
 
+.snack-error {
+  @include mat.snack-bar-overrides(
+    (
+      button-color: white,
+      container-color: rgba(255, 0, 0, 0.625),
+      supporting-text-color: white,
+    )
+  );
+}
+
+.snack-success {
+  @include mat.snack-bar-overrides(
+    (
+      button-color: white,
+      container-color: green,
+      supporting-text-color: white,
+    )
+  );
+}
+
 .mdc-notched-outline__notch {
   border-right-style: none !important;
 }
